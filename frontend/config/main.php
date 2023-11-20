@@ -15,6 +15,9 @@ return [
         'pd' => [
             'class' => 'frontend\modules\pd\Module',
         ],
+        'da' => [
+            'class' => 'frontend\modules\da\da',
+        ],
     ],
     'components' => [
         'request' => [
