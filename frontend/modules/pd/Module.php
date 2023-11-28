@@ -11,7 +11,7 @@ class Module extends \yii\base\Module
      * {@inheritdoc}
      */
     public $controllerNamespace = 'frontend\modules\pd\controllers';
-
+    public $layout = 'pd';
     /**
      * {@inheritdoc}
      */
