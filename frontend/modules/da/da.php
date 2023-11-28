@@ -11,7 +11,7 @@ class da extends \yii\base\Module
      * {@inheritdoc}
      */
     public $controllerNamespace = 'frontend\modules\da\controllers';
-
+    public $layout = 'layout';
     /**
      * {@inheritdoc}
      */
