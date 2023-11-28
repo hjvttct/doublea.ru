@@ -43,6 +43,9 @@ AppAsset::register($this);
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
     }
+    if (Yii::$app->user->can('admin')) {
+        $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/adminpage']];
+    }
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav me-auto mb-2 mb-md-0'],
