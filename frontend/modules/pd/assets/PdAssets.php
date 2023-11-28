@@ -1,18 +1,19 @@
 <?php
 
-namespace frontend\assets;
+namespace frontend\modules\pd\assets;
 
 use yii\web\AssetBundle;
 
 /**
  * Main frontend application asset bundle.
  */
-class AppAsset extends AssetBundle
+class PdAssets extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+
+        'css/style1.css',
 
     ];
     public $js = [
@@ -24,3 +25,4 @@ class AppAsset extends AssetBundle
 
 
 }
+
