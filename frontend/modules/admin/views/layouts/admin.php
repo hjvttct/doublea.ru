@@ -10,7 +10,7 @@ use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
-\frontend\modules\pd\assets\PdAssets::register($this);
+AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
@@ -58,4 +58,5 @@ use yii\bootstrap5\NavBar;
     </body>
     </html>
 <?php $this->endPage();
+
 

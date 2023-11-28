@@ -18,6 +18,9 @@ return [
         'da' => [
             'class' => 'frontend\modules\da\da',
         ],
+        'admin' => [
+            'class' => 'frontend\modules\admin\Module',
+        ],
     ],
     'components' => [
         'request' => [
