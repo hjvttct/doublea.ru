@@ -5,13 +5,13 @@
 
 use common\widgets\Alert;
 use frontend\assets\AppAsset;
-use frontend\modules\da\assets\DaAssets;
+use frontend\modules\admin\assets\AdminAsset;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 
-DaAssets::register($this);
+AdminAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
     <!DOCTYPE html>
@@ -45,7 +45,7 @@ DaAssets::register($this);
             $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         }
         if (Yii::$app->user->can('admin')) {
-            $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/adminpage']];
+            $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/admin/adminpage']];
         }
 
         echo Nav::widget([
