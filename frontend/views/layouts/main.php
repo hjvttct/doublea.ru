@@ -39,12 +39,13 @@ AppAsset::register($this);
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
         ['label' => 'Catalog', 'url' => ['/da/catalog/catalog']],
+        ['label' => 'Catalog', 'url' => ['/pd/catalog/catalog']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
     }
     if (Yii::$app->user->can('admin')) {
-        $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/adminpage']];
+        $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/admin/adminpage']];
     }
 
     echo Nav::widget([
