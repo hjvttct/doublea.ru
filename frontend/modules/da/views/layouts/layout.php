@@ -45,7 +45,7 @@ DaAssets::register($this);
             $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         }
         if (Yii::$app->user->can('admin')) {
-            $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/adminpage']];
+            $menuItems[] = ['label' => 'Admin', 'url' => ['/admin/admin/adminpage']];
         }
 
         echo Nav::widget([
