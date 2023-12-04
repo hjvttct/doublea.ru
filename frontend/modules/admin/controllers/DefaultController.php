@@ -1,9 +1,8 @@
 <?php
 
-namespace frontend\modules\pd\controllers;
+namespace frontend\modules\admin\controllers;
 
 use yii\web\Controller;
-
 
 class DefaultController extends Controller
 {
